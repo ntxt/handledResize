@@ -4,11 +4,11 @@ function init(){
     var logLine = 0;
     var resizeCallbacks = [
         function resizeDiv(){
-            var me = $("div.fluidsize");
+            var me = $("div.handle-resize");
             me.html("szer: " + me.css("width"));
         },
         function resizeCanvas(){
-            var me = $("canvas.fluidsize");
+            var me = $("canvas.handle-resize");
             var canvas = me[0];
 
             if(adjustCanvas(canvas)){

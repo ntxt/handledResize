@@ -1,4 +1,4 @@
-.fluidsize {
+.handle-resize {
     display:block;
     width:calc(100% - 2em);
     min-height:10em;

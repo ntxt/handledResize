@@ -1,0 +1,16 @@
+.fluidsize {
+    display:block;
+    width:calc(100% - 2em);
+    min-height:10em;
+    max-height:80%;
+    border:1px solid rgba(0,0,0,0.2);
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
+    margin:1em;
+}
+
+#log{
+    white-space: pre;
+    max-height:20em;
+    overflow: auto;
+    display: block;
+}

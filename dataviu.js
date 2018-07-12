@@ -5,7 +5,7 @@ function init(){
     var resizeCallbacks = [
         function resizeDiv(){
             var me = $("div.handle-resize");
-            me.html("szer: " + me.css("width"));
+            me.html("div: " + me.css("width"));
         },
         function resizeCanvas(){
             var me = $("canvas.handle-resize");
@@ -15,8 +15,13 @@ function init(){
                 var ctx = canvas.getContext("2d");
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
                 ctx.font = "30px Arial";
-                ctx.fillText(canvas.clientWidth,10,30);
+                ctx.fillText("canvas: " + canvas.clientWidth,10,30);
             }
+        },
+        function resizeSvg(){
+            var me = $("svg.handle-resize");
+            var txt = me.find("text");
+            txt.text("svg: " + me.css("width"));
         }
     ];
 

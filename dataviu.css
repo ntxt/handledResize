@@ -1,3 +1,7 @@
+h1{
+    margin:1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .handle-resize {
     display:block;
     width:calc(100% - 2em);
